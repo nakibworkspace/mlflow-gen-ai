@@ -53,3 +53,35 @@ llm-outp-evaluation/
 ├── dataset.txt
 └── reference.txt
 ```
+
+## Run Lab
+
+Start UI:
+```bash
+mlflow ui
+```
+
+### Run script:
+```bash
+python3 run_eval.py
+```
+
+Open:
+```bash
+http://127.0.0.1:5000
+```
+
+🔎 What You Should See in UI
+
+Trace tree:
+```
+Run
+ └── generation
+      ├── length_eval
+      └── semantic_eval
+```
+
+Click each span to inspect:
+1. inputs
+2. outputs
+3. scores
